@@ -35,3 +35,159 @@
 [2023-12-07 13:00:36,045: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2023-12-07 13:00:47,143: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
 [2023-12-07 13:00:48,463: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-07 22:54:16,896: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-07 22:54:16,910: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-07 22:54:16,912: INFO: common: created directory at: artifacts]
+[2023-12-07 22:54:16,914: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-07 23:02:05,633: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-07 23:44:05,275: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-07 23:44:05,275: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-07 23:44:05,275: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-07 23:44:05,275: INFO: common: created directory at: artifacts]
+[2023-12-07 23:44:05,275: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\main.py", line 12, in <module>
+    cal.main()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s1_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2023-12-07 23:46:33,870: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-07 23:46:33,870: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-07 23:46:33,870: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-07 23:46:33,870: INFO: common: created directory at: artifacts]
+[2023-12-07 23:46:33,870: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\main.py", line 12, in <module>
+    cal.main()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s1_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2023-12-07 23:53:23,403: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-07 23:53:23,403: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-07 23:53:23,403: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-07 23:53:23,403: INFO: common: created directory at: artifacts]
+[2023-12-07 23:53:23,403: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\main.py", line 12, in <module>
+    cal.main()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s1_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2023-12-07 23:55:15,268: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-07 23:55:15,268: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-07 23:55:15,268: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-07 23:55:15,268: INFO: common: created directory at: artifacts]
+[2023-12-07 23:55:15,268: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\main.py", line 12, in <module>
+    cal.main()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s1_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2023-12-08 00:03:10,956: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:03:10,960: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:03:10,965: INFO: common: created directory at: artifacts]
+[2023-12-08 00:03:10,968: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-08 00:03:10,968: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:03:37,201: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:07:12,019: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-08 00:07:12,019: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:07:12,019: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:07:12,019: INFO: common: created directory at: artifacts]
+[2023-12-08 00:07:12,019: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\main.py", line 12, in <module>
+    cal.main()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s1_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2023-12-08 00:15:42,937: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-08 00:15:42,937: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:15:42,937: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:15:42,937: INFO: common: created directory at: artifacts]
+[2023-12-08 00:15:42,937: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-08 00:15:42,937: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:15:53,561: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:15:54,906: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-08 00:15:54,906: INFO: main: ******** Stage  :  Data Ingestion  Started ********]
+[2023-12-08 00:15:54,906: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:15:54,906: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:15:54,906: INFO: common: created directory at: artifacts]
+[2023-12-08 00:15:54,906: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-08 00:15:55,331: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-08 00:15:55,502: INFO: main: ******** Stage  :  Data Ingestion  Completed ********]
+[2023-12-08 00:23:32,055: INFO: main: 
+
+=====================  Programme Started  =====================
+
+]
+[2023-12-08 00:23:32,055: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-08 00:23:32,055: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:23:32,055: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:23:32,055: INFO: common: created directory at: artifacts]
+[2023-12-08 00:23:32,055: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-08 00:23:32,055: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:23:37,931: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:23:39,264: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-08 00:23:39,264: INFO: main: ******** Stage  :  Data Ingestion  Started ********]
+[2023-12-08 00:23:39,264: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:23:39,264: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:23:39,264: INFO: common: created directory at: artifacts]
+[2023-12-08 00:23:39,264: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-08 00:23:39,656: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-08 00:23:39,862: INFO: main: ******** Stage  :  Data Ingestion  Completed ********]
+[2023-12-08 00:23:39,862: INFO: main: 
+
+=====================  Programme Completed  =====================
+
+]
+[2023-12-08 00:28:48,669: INFO: main: 
+
+=====================  Programme Started  =====================
+
+]
+[2023-12-08 00:28:48,669: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-08 00:28:48,669: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:28:48,669: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:28:48,684: INFO: common: created directory at: artifacts]
+[2023-12-08 00:28:48,684: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-08 00:28:48,684: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:28:54,296: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:28:55,833: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-08 00:28:55,833: INFO: main: ******** Stage  :  Prepare Base Model  Started ********]
+[2023-12-08 00:28:55,849: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:28:55,849: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:28:55,849: INFO: common: created directory at: artifacts]
+[2023-12-08 00:28:55,849: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-08 00:28:56,257: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-08 00:28:56,475: INFO: main: ******** Stage  :  Prepare Base Model  Completed ********]
+[2023-12-08 00:28:56,475: INFO: main: 
+
+=====================  Programme Completed  =====================
+
+]
+[2023-12-08 00:31:59,681: INFO: main: 
+
+=====================  Programme Started  =====================
+
+]
+[2023-12-08 00:31:59,681: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-08 00:31:59,681: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:31:59,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:31:59,681: INFO: common: created directory at: artifacts]
+[2023-12-08 00:31:59,681: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-08 00:31:59,681: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:32:06,389: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-08 00:32:07,768: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-08 00:32:07,768: INFO: main: ******** Stage  :  Prepare Base Model  (Started) ********]
+[2023-12-08 00:32:07,768: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-08 00:32:07,768: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-08 00:32:07,768: INFO: common: created directory at: artifacts]
+[2023-12-08 00:32:07,768: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-08 00:32:08,178: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-08 00:32:08,382: INFO: main: ******** Stage  :  Prepare Base Model  (Completed) ********]
+[2023-12-08 00:32:08,382: INFO: main: 
+
+=====================  Programme Completed  =====================
+
+]
