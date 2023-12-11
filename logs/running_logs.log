@@ -281,3 +281,628 @@ NameError: name 'os' is not defined
 
 =====================  Programme Completed  =====================
 \nn]
+[2023-12-10 12:48:24,343: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-10 12:48:24,343: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-10 12:48:24,359: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 12:48:24,359: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 12:48:24,359: INFO: common: created directory at: artifacts]
+[2023-12-10 12:48:24,359: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-10 12:48:24,359: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-10 12:48:32,227: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-10 12:48:33,736: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-10 12:48:33,736: INFO: main: ******** Stage  :  Prepare Base Model  (Started) ********]
+[2023-12-10 12:48:33,736: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 12:48:33,752: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 12:48:33,752: INFO: common: created directory at: artifacts]
+[2023-12-10 12:48:33,752: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-10 12:48:34,315: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-10 12:48:34,623: INFO: main: ******** Stage  :  Prepare Base Model  (Completed) ********]
+[2023-12-10 12:48:34,623: INFO: main: ******** Stage  :  Model Training  (Started) ********]
+[2023-12-10 12:48:34,623: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 12:48:34,623: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 12:48:34,623: INFO: common: created directory at: artifacts]
+[2023-12-10 12:48:34,623: INFO: common: created directory at: artifacts\training]
+[2023-12-10 12:50:04,663: INFO: main: ******** Stage  :  Model Training  (Completed) ********]
+[2023-12-10 12:50:04,663: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2023-12-10 12:55:25,478: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 12:55:25,484: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 12:55:25,489: INFO: common: created directory at: artifacts]
+[2023-12-10 12:56:27,151: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 12:56:27,158: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 12:56:27,160: INFO: common: created directory at: artifacts]
+[2023-12-10 12:58:37,346: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 12:58:37,353: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 12:58:37,356: INFO: common: created directory at: artifacts]
+[2023-12-10 12:59:13,613: INFO: common: json file saved at: scores.json]
+[2023-12-10 12:59:15,375: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-10 12:59:15,986: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmp8wo8qdrb\model\data\model\assets]
+[2023-12-10 12:59:24,313: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\548206d423014ec58339f68a34ef9ede\artifacts\model\data]
+[2023-12-10 12:59:24,313: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\548206d423014ec58339f68a34ef9ede\artifacts\model\data\model]
+[2023-12-10 12:59:24,313: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\548206d423014ec58339f68a34ef9ede\artifacts\model\data\model\assets]
+[2023-12-10 12:59:24,313: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\548206d423014ec58339f68a34ef9ede\artifacts\model\data\model\variables]
+[2023-12-10 13:02:30,438: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 13:02:30,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 13:02:30,448: INFO: common: created directory at: artifacts]
+[2023-12-10 13:03:06,833: INFO: common: json file saved at: scores.json]
+[2023-12-10 13:03:09,579: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-10 13:03:10,208: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmpa9d0px43\model\data\model\assets]
+[2023-12-10 13:06:41,654: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-10 13:06:41,668: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-10 13:06:41,669: INFO: common: created directory at: artifacts]
+[2023-12-10 13:07:20,687: INFO: common: json file saved at: scores.json]
+[2023-12-10 13:07:22,280: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-10 13:07:22,905: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmpwr7o1uu6\model\data\model\assets]
+[2023-12-10 13:07:30,645: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\d3970ad3914548e598b61b9532578612\artifacts\model\data]
+[2023-12-10 13:07:30,646: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\d3970ad3914548e598b61b9532578612\artifacts\model\data\model]
+[2023-12-10 13:07:30,646: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\d3970ad3914548e598b61b9532578612\artifacts\model\data\model\assets]
+[2023-12-10 13:07:30,656: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\d3970ad3914548e598b61b9532578612\artifacts\model\data\model\variables]
+[2023-12-11 16:58:26,420: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 16:58:26,435: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 16:58:26,439: INFO: common: created directory at: artifacts]
+[2023-12-11 16:59:02,201: INFO: common: json file saved at: scores.json]
+[2023-12-11 16:59:03,594: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 16:59:04,169: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmpjr75vd5o\model\data\model\assets]
+[2023-12-11 16:59:10,842: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6d64783f0d9b4eb283dc248298c2ffb2\artifacts\model\data]
+[2023-12-11 16:59:10,850: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6d64783f0d9b4eb283dc248298c2ffb2\artifacts\model\data\model]
+[2023-12-11 16:59:10,851: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6d64783f0d9b4eb283dc248298c2ffb2\artifacts\model\data\model\assets]
+[2023-12-11 16:59:10,859: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6d64783f0d9b4eb283dc248298c2ffb2\artifacts\model\data\model\variables]
+[2023-12-11 17:03:28,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:03:28,443: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:03:28,444: INFO: common: created directory at: artifacts]
+[2023-12-11 17:04:03,821: INFO: common: json file saved at: scores.json]
+[2023-12-11 17:04:07,088: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 17:04:07,579: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmp41w832nb\model\data\model\assets]
+[2023-12-11 17:44:47,741: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 17:44:47,741: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-11 17:44:47,741: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:44:47,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:44:47,741: INFO: common: created directory at: artifacts]
+[2023-12-11 17:44:47,741: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 17:44:47,741: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 17:44:54,935: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 17:44:56,445: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-11 17:44:56,445: INFO: main: ******** Stage  :  Prepare Base Model  (Started) ********]
+[2023-12-11 17:44:56,461: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:44:56,461: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:44:56,461: INFO: common: created directory at: artifacts]
+[2023-12-11 17:44:56,461: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 17:44:56,874: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 17:44:57,124: INFO: main: ******** Stage  :  Prepare Base Model  (Completed) ********]
+[2023-12-11 17:44:57,124: INFO: main: ******** Stage  :  Model Training  (Started) ********]
+[2023-12-11 17:44:57,124: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:44:57,124: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:44:57,124: INFO: common: created directory at: artifacts]
+[2023-12-11 17:44:57,124: INFO: common: created directory at: artifacts\training]
+[2023-12-11 17:47:47,398: INFO: main: ******** Stage  :  Model Training  (Completed) ********]
+[2023-12-11 17:47:47,398: INFO: main: ******** Stage  :  Model Evaluation  Started ********]
+[2023-12-11 17:47:47,398: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:47:47,398: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:47:47,398: INFO: common: created directory at: artifacts]
+[2023-12-11 17:47:47,752: ERROR: main: name 'model' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\main.py", line 59, in <module>
+    cal.main()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s4_evaluate_model.py", line 18, in main
+    evaluation.evaluation()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\components\evaluate_model.py", line 51, in evaluation
+    self.score = model.evaluate(self.valid_generator)
+NameError: name 'model' is not defined
+[2023-12-11 17:53:44,110: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 17:53:44,110: INFO: main: ******** Stage  =>  Data Ingestion  (Started) ********]
+[2023-12-11 17:53:44,110: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:53:44,110: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:53:44,110: INFO: common: created directory at: artifacts]
+[2023-12-11 17:53:44,110: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 17:53:44,110: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 17:53:52,861: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 17:53:54,143: INFO: main: ******** Stage  =>  Data Ingestion  (Completed) ********]
+[2023-12-11 17:53:54,143: INFO: main: ******** Stage  :  Prepare Base Model  (Started) ********]
+[2023-12-11 17:53:54,143: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:53:54,143: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:53:54,143: INFO: common: created directory at: artifacts]
+[2023-12-11 17:53:54,143: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 17:53:54,535: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 17:53:54,840: INFO: main: ******** Stage  :  Prepare Base Model  (Completed) ********]
+[2023-12-11 17:53:54,840: INFO: main: ******** Stage  :  Model Training  (Started) ********]
+[2023-12-11 17:53:54,840: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:53:54,840: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:53:54,840: INFO: common: created directory at: artifacts]
+[2023-12-11 17:53:54,840: INFO: common: created directory at: artifacts\training]
+[2023-12-11 17:56:46,515: INFO: main: ******** Stage  :  Model Training  (Completed) ********]
+[2023-12-11 17:56:46,515: INFO: main: ******** Stage  :  Model Evaluation  Started ********]
+[2023-12-11 17:56:46,515: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 17:56:46,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 17:56:46,530: INFO: common: created directory at: artifacts]
+[2023-12-11 17:56:46,872: ERROR: main: name 'model' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\main.py", line 59, in <module>
+    cal.main()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s4_evaluate_model.py", line 18, in main
+    evaluation.evaluation()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\components\evaluate_model.py", line 51, in evaluation
+    self.score = model.evaluate(self.valid_generator)
+NameError: name 'model' is not defined
+[2023-12-11 18:06:29,398: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 18:06:29,398: INFO: main: 
+******** Stage  =>  Data Ingestion  (Started) ********
+]
+[2023-12-11 18:06:29,398: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:06:29,398: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:06:29,398: INFO: common: created directory at: artifacts]
+[2023-12-11 18:06:29,398: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 18:06:29,398: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:06:34,992: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:06:36,257: INFO: main: 
+******** Stage  =>  Data Ingestion  (Completed) ********
+]
+[2023-12-11 18:06:36,257: INFO: main: 
+xxxxx-----xxxxx
+]
+[2023-12-11 18:06:36,257: INFO: main: 
+******** Stage  :  Prepare Base Model  (Started) ********
+]
+[2023-12-11 18:06:36,257: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:06:36,257: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:06:36,257: INFO: common: created directory at: artifacts]
+[2023-12-11 18:06:36,257: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 18:06:36,677: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 18:06:36,935: INFO: main: 
+******** Stage  :  Prepare Base Model  (Completed) ********
+]
+[2023-12-11 18:06:36,935: INFO: main: 
+xxxxx-----xxxxx
+]
+[2023-12-11 18:06:36,935: INFO: main: 
+******** Stage  :  Model Training  (Started) ********
+]
+[2023-12-11 18:06:36,935: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:06:36,935: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:06:36,935: INFO: common: created directory at: artifacts]
+[2023-12-11 18:06:36,935: INFO: common: created directory at: artifacts\training]
+[2023-12-11 18:08:08,727: INFO: main: 
+******** Stage  :  Model Training  (Completed) ********
+]
+[2023-12-11 18:08:08,727: INFO: main: 
+xxxxx-----xxxxx
+]
+[2023-12-11 18:08:08,727: INFO: main: 
+******** Stage  :  Model Evaluation  (Started) ********
+]
+[2023-12-11 18:08:08,743: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:08:08,743: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:08:08,743: INFO: common: created directory at: artifacts]
+[2023-12-11 18:08:34,711: INFO: common: json file saved at: scores.json]
+[2023-12-11 18:08:36,063: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 18:08:36,639: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmpx0c79ykr\model\data\model\assets]
+[2023-12-11 18:08:42,270: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\14228308513f4466b4db969421e1b8a1\artifacts\model\data]
+[2023-12-11 18:08:42,273: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\14228308513f4466b4db969421e1b8a1\artifacts\model\data\model]
+[2023-12-11 18:08:42,274: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\14228308513f4466b4db969421e1b8a1\artifacts\model\data\model\assets]
+[2023-12-11 18:08:42,277: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\14228308513f4466b4db969421e1b8a1\artifacts\model\data\model\variables]
+[2023-12-11 18:08:42,425: INFO: main: 
+******** Stage  :  Model Evaluation  (Completed) ********
+]
+[2023-12-11 18:08:42,425: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2023-12-11 18:11:39,811: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 18:11:39,811: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2023-12-11 18:11:39,811: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:11:39,811: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:11:39,811: INFO: common: created directory at: artifacts]
+[2023-12-11 18:11:39,811: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 18:11:39,811: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:11:45,543: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:11:46,798: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2023-12-11 18:11:46,798: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2023-12-11 18:11:46,798: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:11:46,798: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:11:46,798: INFO: common: created directory at: artifacts]
+[2023-12-11 18:11:46,798: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 18:11:47,220: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 18:11:47,540: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2023-12-11 18:11:47,540: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2023-12-11 18:11:47,540: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:11:47,540: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:11:47,540: INFO: common: created directory at: artifacts]
+[2023-12-11 18:11:47,540: INFO: common: created directory at: artifacts\training]
+[2023-12-11 18:13:14,530: INFO: main: 
+
+******** Stage  :  Model Training  (Completed) ********
+
+]
+[2023-12-11 18:13:14,530: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Started) ********
+
+]
+[2023-12-11 18:13:14,530: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:13:14,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:13:14,530: INFO: common: created directory at: artifacts]
+[2023-12-11 18:13:40,463: INFO: common: json file saved at: scores.json]
+[2023-12-11 18:13:41,654: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 18:13:42,145: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmp2qvfhr2h\model\data\model\assets]
+[2023-12-11 18:13:47,701: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\de8d46eb3786461ba4b2ecc1e37836b1\artifacts\model\data]
+[2023-12-11 18:13:47,703: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\de8d46eb3786461ba4b2ecc1e37836b1\artifacts\model\data\model]
+[2023-12-11 18:13:47,705: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\de8d46eb3786461ba4b2ecc1e37836b1\artifacts\model\data\model\assets]
+[2023-12-11 18:13:47,715: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\de8d46eb3786461ba4b2ecc1e37836b1\artifacts\model\data\model\variables]
+[2023-12-11 18:13:47,871: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Completed) ********
+
+]
+[2023-12-11 18:13:47,871: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2023-12-11 18:15:17,645: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 18:15:17,645: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2023-12-11 18:15:17,645: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:15:17,645: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:15:17,645: INFO: common: created directory at: artifacts]
+[2023-12-11 18:15:17,645: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 18:15:17,645: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:15:24,006: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:15:25,287: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2023-12-11 18:15:25,287: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2023-12-11 18:15:25,287: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:15:25,287: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:15:25,287: INFO: common: created directory at: artifacts]
+[2023-12-11 18:15:25,287: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 18:15:25,686: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 18:15:25,992: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2023-12-11 18:15:25,992: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2023-12-11 18:15:25,992: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:15:25,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:15:25,992: INFO: common: created directory at: artifacts]
+[2023-12-11 18:15:25,992: INFO: common: created directory at: artifacts\training]
+[2023-12-11 18:16:53,968: INFO: main: 
+
+******** Stage  :  Model Training  (Completed) ********
+
+]
+[2023-12-11 18:16:53,968: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Started) ********
+
+]
+[2023-12-11 18:16:53,968: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:16:53,968: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:16:53,968: INFO: common: created directory at: artifacts]
+[2023-12-11 18:17:19,907: INFO: common: json file saved at: scores.json]
+[2023-12-11 18:17:21,165: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 18:17:21,620: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmpg3jp_4ss\model\data\model\assets]
+[2023-12-11 18:17:27,253: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6ef904ad24e94dd98c6ffc42376d1ab6\artifacts\model\data]
+[2023-12-11 18:17:27,264: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6ef904ad24e94dd98c6ffc42376d1ab6\artifacts\model\data\model]
+[2023-12-11 18:17:27,267: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6ef904ad24e94dd98c6ffc42376d1ab6\artifacts\model\data\model\assets]
+[2023-12-11 18:17:27,278: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\6ef904ad24e94dd98c6ffc42376d1ab6\artifacts\model\data\model\variables]
+[2023-12-11 18:17:27,416: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Completed) ********
+
+]
+[2023-12-11 18:17:27,416: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2023-12-11 18:33:06,655: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 18:33:06,655: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2023-12-11 18:33:06,660: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:33:06,662: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:33:06,662: INFO: common: created directory at: artifacts]
+[2023-12-11 18:33:06,662: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 18:33:06,662: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:33:21,952: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:33:23,386: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2023-12-11 18:33:23,386: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2023-12-11 18:33:23,386: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:33:23,386: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:33:23,386: INFO: common: created directory at: artifacts]
+[2023-12-11 18:33:23,386: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 18:33:23,792: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 18:33:24,083: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2023-12-11 18:33:24,083: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2023-12-11 18:33:24,083: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:33:24,083: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:33:24,083: INFO: common: created directory at: artifacts]
+[2023-12-11 18:33:24,083: INFO: common: created directory at: artifacts\training]
+[2023-12-11 18:34:50,210: INFO: main: 
+
+******** Stage  :  Model Training  (Completed) ********
+
+]
+[2023-12-11 18:34:50,211: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Started) ********
+
+]
+[2023-12-11 18:34:50,213: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:34:50,214: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:34:50,215: INFO: common: created directory at: artifacts]
+[2023-12-11 18:35:15,960: INFO: common: json file saved at: scores.json]
+[2023-12-11 18:35:15,960: INFO: common: json file saved at: scores.json]
+[2023-12-11 18:35:17,171: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 18:35:17,669: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmppg9m5lxt\model\data\model\assets]
+[2023-12-11 18:35:23,095: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\ed7bf192513549bf8cedb67bea0ca127\artifacts\model\data]
+[2023-12-11 18:35:23,099: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\ed7bf192513549bf8cedb67bea0ca127\artifacts\model\data\model]
+[2023-12-11 18:35:23,102: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\ed7bf192513549bf8cedb67bea0ca127\artifacts\model\data\model\assets]
+[2023-12-11 18:35:23,111: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\ed7bf192513549bf8cedb67bea0ca127\artifacts\model\data\model\variables]
+[2023-12-11 18:35:23,231: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Completed) ********
+
+]
+[2023-12-11 18:35:23,231: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2023-12-11 18:37:35,282: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 18:37:35,282: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2023-12-11 18:37:35,282: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:37:35,282: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:37:35,282: INFO: common: created directory at: artifacts]
+[2023-12-11 18:37:35,282: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 18:37:35,282: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:37:42,601: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 18:37:44,232: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2023-12-11 18:37:44,233: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2023-12-11 18:37:44,234: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:37:44,236: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:37:44,236: INFO: common: created directory at: artifacts]
+[2023-12-11 18:37:44,237: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 18:37:44,639: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 18:37:44,934: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2023-12-11 18:37:44,934: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2023-12-11 18:37:44,934: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:37:44,934: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:37:44,934: INFO: common: created directory at: artifacts]
+[2023-12-11 18:37:44,934: INFO: common: created directory at: artifacts\training]
+[2023-12-11 18:39:21,436: INFO: main: 
+
+******** Stage  :  Model Training  (Completed) ********
+
+]
+[2023-12-11 18:39:21,436: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Started) ********
+
+]
+[2023-12-11 18:39:21,436: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 18:39:21,436: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 18:39:21,436: INFO: common: created directory at: artifacts]
+[2023-12-11 18:39:48,141: INFO: common: json file saved at: scores.json]
+[2023-12-11 18:39:48,141: INFO: common: json file saved at: scores.json]
+[2023-12-11 18:39:48,141: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Completed) ********
+
+]
+[2023-12-11 18:39:48,141: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2023-12-11 19:20:30,989: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2023-12-11 19:20:30,989: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2023-12-11 19:20:30,989: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 19:20:30,989: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 19:20:30,989: INFO: common: created directory at: artifacts]
+[2023-12-11 19:20:30,989: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-11 19:20:30,989: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 19:20:37,256: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1xmoaroF6Oj9VwtFqXeAwZbzP5THEUjWR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-11 19:20:39,814: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2023-12-11 19:20:39,814: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2023-12-11 19:20:39,814: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 19:20:39,814: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 19:20:39,814: INFO: common: created directory at: artifacts]
+[2023-12-11 19:20:39,814: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-11 19:20:40,308: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-11 19:20:40,675: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2023-12-11 19:20:40,675: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2023-12-11 19:20:40,676: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 19:20:40,676: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 19:20:40,676: INFO: common: created directory at: artifacts]
+[2023-12-11 19:20:40,676: INFO: common: created directory at: artifacts\training]
+[2023-12-11 19:22:14,007: INFO: main: 
+
+******** Stage  :  Model Training  (Completed) ********
+
+]
+[2023-12-11 19:22:14,007: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Started) ********
+
+]
+[2023-12-11 19:22:14,007: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 19:22:14,007: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 19:22:14,007: INFO: common: created directory at: artifacts]
+[2023-12-11 19:22:40,348: INFO: common: json file saved at: scores.json]
+[2023-12-11 19:22:40,348: INFO: common: json file saved at: scores.json]
+[2023-12-11 19:22:43,155: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 19:22:43,638: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmptfh11xso\model\data\model\assets]
+[2023-12-11 19:23:22,154: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Completed) ********
+
+]
+[2023-12-11 19:23:22,154: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
