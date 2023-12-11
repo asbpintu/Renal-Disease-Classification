@@ -1030,3 +1030,109 @@ xxxxx-----xxxxx
 [2023-12-11 23:08:29,218: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\c3a7fc10cfbd4709b85f45f8f7c077e8\artifacts\model\data\model\variables]
 [2023-12-11 23:08:29,397: INFO: s4_evaluate_model: ******** Stage  :  Model Evaluation  Completed ********]
 [2023-12-11 23:26:41,704: INFO: set_env_variables: ------------- Environment variables set successfully -------------]
+[2023-12-11 23:47:08,412: INFO: set_env_variables: ------------- Environment variables set successfully -------------]
+[2023-12-11 23:47:21,305: INFO: s3_training_model: ******** Stage  :  Model Training  Started ********]
+[2023-12-11 23:47:21,307: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 23:47:21,308: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 23:47:21,308: INFO: common: created directory at: artifacts]
+[2023-12-11 23:47:21,309: INFO: common: created directory at: artifacts\training]
+[2023-12-11 23:47:47,332: ERROR: s3_training_model: Graph execution error:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney_img_ctscan\\Tumor\\Tumor- (658).jpg'
+Traceback (most recent call last):
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\tensorflow\python\ops\script_ops.py", line 267, in __call__
+    ret = func(*args)
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\tensorflow\python\autograph\impl\api.py", line 642, in wrapper
+    return func(*args, **kwargs)
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\tensorflow\python\data\ops\from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\engine\data_adapter.py", line 902, in wrapped_generator
+    for data in generator_fn():
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\engine\data_adapter.py", line 1049, in generator_fn
+    yield x[i]
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\preprocessing\image.py", line 116, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\preprocessing\image.py", line 370, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 422, in load_img
+    with open(path, "rb") as f:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney_img_ctscan\\Tumor\\Tumor- (658).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_881]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\src\cnnClassifier\pipeline\s3_training_model.py", line 28, in <module>
+    cal.main()
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\src\cnnClassifier\pipeline\s3_training_model.py", line 20, in main
+    training.train()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\components\training_model.py", line 78, in train
+    self.model.fit(
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\tensorflow\python\eager\execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.UnknownError: Graph execution error:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney_img_ctscan\\Tumor\\Tumor- (658).jpg'
+Traceback (most recent call last):
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\tensorflow\python\ops\script_ops.py", line 267, in __call__
+    ret = func(*args)
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\tensorflow\python\autograph\impl\api.py", line 642, in wrapper
+    return func(*args, **kwargs)
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\tensorflow\python\data\ops\from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\engine\data_adapter.py", line 902, in wrapped_generator
+    for data in generator_fn():
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\engine\data_adapter.py", line 1049, in generator_fn
+    yield x[i]
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\preprocessing\image.py", line 116, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\preprocessing\image.py", line 370, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 422, in load_img
+    with open(path, "rb") as f:
+
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\kidney_img_ctscan\\Tumor\\Tumor- (658).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_881]
+[2023-12-11 23:48:13,049: INFO: set_env_variables: ------------- Environment variables set successfully -------------]
+[2023-12-11 23:48:25,719: INFO: s3_training_model: ******** Stage  :  Model Training  Started ********]
+[2023-12-11 23:48:25,719: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 23:48:25,719: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 23:48:25,719: INFO: common: created directory at: artifacts]
+[2023-12-11 23:48:25,719: INFO: common: created directory at: artifacts\training]
+[2023-12-11 23:49:56,790: INFO: s3_training_model: ******** Stage  :  Model Training  Completed ********]
+[2023-12-11 23:50:01,861: INFO: s4_evaluate_model: ******** Stage  :  Model Evaluation  Started ********]
+[2023-12-11 23:50:01,877: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-11 23:50:01,878: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-11 23:50:01,878: INFO: common: created directory at: artifacts]
+[2023-12-11 23:50:27,927: INFO: common: json file saved at: scores.json]
+[2023-12-11 23:50:27,927: INFO: common: json file saved at: scores.json]
+[2023-12-11 23:50:29,004: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-11 23:50:29,630: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmpni9s3i8o\model\data\model\assets]
+[2023-12-11 23:50:35,063: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\f5a4db88c608404cab7639ebdde16252\artifacts\model\data]
+[2023-12-11 23:50:35,079: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\f5a4db88c608404cab7639ebdde16252\artifacts\model\data\model]
+[2023-12-11 23:50:35,085: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\f5a4db88c608404cab7639ebdde16252\artifacts\model\data\model\assets]
+[2023-12-11 23:50:35,098: INFO: dir_util: creating C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\mlruns\0\f5a4db88c608404cab7639ebdde16252\artifacts\model\data\model\variables]
+[2023-12-11 23:50:35,286: INFO: s4_evaluate_model: ******** Stage  :  Model Evaluation  Completed ********]
+[2023-12-11 23:51:42,292: INFO: set_env_variables: ------------- Environment variables set successfully -------------]

@@ -11,3 +11,5 @@ secret.txt
 mlruns/
 
 set_env_variables.py
+
+.dvc/
