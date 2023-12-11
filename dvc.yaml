@@ -1,0 +1,54 @@
+stages:
+  set_env_variables:
+    cmd: python set_env_variables.py
+    
+  data_ingestion:
+    cmd: python src\cnnClassifier\pipeline\s1_data_ingestion.py
+    deps:
+      - src\cnnClassifier\pipeline\s1_data_ingestion.py
+      - config\config.yaml
+    outs:
+      - artifacts\data_ingestion\kidney_img_ctscan
+
+  prepare_model:
+    cmd: python src\cnnClassifier\pipeline\s2_prepare_base_model.py
+    deps:
+      - src\cnnClassifier\pipeline\s2_prepare_base_model.py
+      - config\config.yaml
+    params:
+      - IMAGE_SIZE
+      - INCLUDE_TOP
+      - CLASSES
+      - WEIGHTS
+      - LEARNING_RATE
+    outs:
+      - artifacts\prepare_base_model
+
+  train_model:
+    cmd: python src\cnnClassifier\pipeline\s3_training_model.py
+    deps:
+      - src\cnnClassifier\pipeline\s3_training_model.py
+      - config\config.yaml
+      - artifacts\data_ingestion\kidney_img_ctscan
+      - artifacts\prepare_base_model
+    params:
+      - AUGMENTATION
+      - IMAGE_SIZE
+      - BATCH_SIZE
+      - EPOCHS
+    outs:
+      - artifacts\training\model.h5
+
+  evaluate_model:
+    cmd: python src\cnnClassifier\pipeline\s4_evaluate_model.py
+    deps:
+      - src\cnnClassifier\pipeline\s4_evaluate_model.py
+      - config\config.yaml
+      - artifacts\data_ingestion\kidney_img_ctscan
+      - artifacts\training\model.h5
+    params:
+      - IMAGE_SIZE
+      - BATCH_SIZE
+    metrics:
+      - scores.json:
+          cache: false

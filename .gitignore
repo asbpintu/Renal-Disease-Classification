@@ -7,3 +7,7 @@ __pycache__/
 artifacts/
 
 secret.txt
+
+mlruns/
+
+set_env_variables.py
