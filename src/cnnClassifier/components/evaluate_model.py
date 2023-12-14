@@ -7,7 +7,12 @@ from urllib.parse import urlparse
 from cnnClassifier.config.configuration import EvaluationConfig
 from cnnClassifier.utils.common import save_json
 
+import os
+from cnnClassifier.config.set_env_variables import my_mlflow_uri
 
+os.environ["MLFLOW_TRACKING_URI"] = my_mlflow_uri.my_uri()['url']
+os.environ["MLFLOW_TRACKING_USERNAME"] = my_mlflow_uri.my_uri()['user']
+os.environ["MLFLOW_TRACKING_PASSWORD"] = my_mlflow_uri.my_uri()['passwd']
 
 
 class Evaluation:

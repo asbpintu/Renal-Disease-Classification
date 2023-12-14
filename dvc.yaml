@@ -1,7 +1,5 @@
 stages:
-  set_env_variables:
-    cmd: python set_env_variables.py
-    
+
   data_ingestion:
     cmd: python src\cnnClassifier\pipeline\s1_data_ingestion.py
     deps:
