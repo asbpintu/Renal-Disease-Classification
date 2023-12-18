@@ -1570,3 +1570,767 @@ OSError: No file or directory found at model.h5
 [2023-12-16 12:29:57,463: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
 [2023-12-16 12:29:58,036: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmp2g4h_lvy\model\data\model\assets]
 [2023-12-16 12:30:38,044: INFO: s4_evaluate_model: ******** Stage  :  Model Evaluation  Completed ********]
+[2023-12-16 12:51:57,028: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-16 12:51:57,029: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-16 12:52:10,158: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:52:10] "GET / HTTP/1.1" 200 -]
+[2023-12-16 12:53:02,481: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:53:02] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:53:53,795: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:53:53] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:54:08,580: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:54:08] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:54:41,465: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:54:41] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:54:51,869: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001E4D9E2DE50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-16 12:54:51,875: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:54:51] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:55:07,359: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001E4DA219670> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-16 12:55:07,363: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:55:07] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:55:17,837: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:55:17] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:55:34,418: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:55:34] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:57:39,897: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:57:39] "POST /predict HTTP/1.1" 200 -]
+[2023-12-16 12:57:41,862: INFO: _internal: 192.168.1.17 - - [16/Dec/2023 12:57:41] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 11:45:39,681: INFO: s1_data_ingestion: ******** Stage  :  Data Ingestion  Started ********]
+[2023-12-18 11:45:39,682: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-18 11:45:39,682: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-18 11:45:39,682: INFO: common: created directory at: artifacts]
+[2023-12-18 11:45:39,682: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-18 11:45:39,682: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Mpud8TZF5guWJwSnu_mYVcYou5xwuxhz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-18 11:45:40,435: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1Mpud8TZF5guWJwSnu_mYVcYou5xwuxhz/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-18 11:45:40,436: ERROR: s1_data_ingestion: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data.zip']
+Traceback (most recent call last):
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\src\cnnClassifier\pipeline\s1_data_ingestion.py", line 25, in <module>
+    cal.main()
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\src\cnnClassifier\pipeline\s1_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 45, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\zipfile.py", line 1248, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion/data.zip'
+[2023-12-18 11:49:12,201: INFO: s1_data_ingestion: ******** Stage  :  Data Ingestion  Started ********]
+[2023-12-18 11:49:12,201: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-18 11:49:12,201: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-18 11:49:12,201: INFO: common: created directory at: artifacts]
+[2023-12-18 11:49:12,217: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-18 11:49:12,217: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-18 11:49:18,119: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-12-18 11:49:18,824: INFO: s1_data_ingestion: ******** Stage  :  Data Ingestion  Completed ********]
+[2023-12-18 11:49:30,433: INFO: s2_prepare_base_model: ******** Stage  :  Prepare Base Model  Started ********]
+[2023-12-18 11:49:30,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-18 11:49:30,433: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-18 11:49:30,433: INFO: common: created directory at: artifacts]
+[2023-12-18 11:49:30,433: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-18 11:49:31,242: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-18 11:49:31,515: INFO: s2_prepare_base_model: ******** Stage  :  Prepare Base Model  Completed ********]
+[2023-12-18 11:49:35,660: INFO: s3_training_model: ******** Stage  :  Model Training  Started ********]
+[2023-12-18 11:49:35,660: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-18 11:49:35,660: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-18 11:49:35,660: INFO: common: created directory at: artifacts]
+[2023-12-18 11:49:35,660: INFO: common: created directory at: artifacts\training]
+[2023-12-18 12:08:12,849: INFO: s3_training_model: ******** Stage  :  Model Training  Completed ********]
+[2023-12-18 12:08:17,839: INFO: s4_evaluate_model: ******** Stage  :  Model Evaluation  Started ********]
+[2023-12-18 12:08:17,839: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-18 12:08:17,839: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-18 12:08:17,839: INFO: common: created directory at: artifacts]
+[2023-12-18 12:08:30,589: INFO: common: json file saved at: scores.json]
+[2023-12-18 12:08:30,589: INFO: common: json file saved at: scores.json]
+[2023-12-18 12:08:33,598: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-12-18 12:08:34,170: INFO: builder_impl: Assets written to: C:\Users\asbpi\AppData\Local\Temp\tmpajmwyp9q\model\data\model\assets]
+[2023-12-18 12:09:16,257: INFO: s4_evaluate_model: ******** Stage  :  Model Evaluation  Completed ********]
+[2023-12-18 12:27:36,729: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 12:27:36,729: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 12:28:02,336: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:28:02] "GET / HTTP/1.1" 200 -]
+[2023-12-18 12:28:50,165: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:28:50] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:29:08,348: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:29:08] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:29:22,098: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:29:22] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:29:30,372: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:29:30] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:29:43,206: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000026DC235F5E0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-18 12:29:43,208: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:29:43] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:36:51,326: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000026DC27495E0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-18 12:36:51,331: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:36:51] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:36:59,308: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:36:59] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:37:10,592: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:37:10] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:37:22,039: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:37:22] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:37:30,658: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:37:30] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:48:54,484: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:48:54] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:52:12,544: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:52:12] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:53:37,878: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:53:37] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 12:56:48,709: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 12:56:48] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 13:00:03,849: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:00:03] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:00:10,381: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:00:10] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 13:00:20,717: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:00:20] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 13:00:23,735: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:00:23] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 13:00:30,611: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:00:30] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 13:02:04,690: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:02:04,691: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:02:08,025: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 13:02:08] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:02:13,767: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "c:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 13:02:13,777: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 13:02:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:12:03,075: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:12:03,075: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:12:09,017: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:12:09] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:12:15,510: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 13:12:15,517: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:12:15] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:14:10,522: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:14:10,523: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:14:18,197: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:14:18] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:14:23,990: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 13:14:23,997: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:14:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:17:01,281: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:17:01,282: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:17:06,551: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:17:06] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:17:11,071: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 13:17:11,079: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:17:11] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:21:24,959: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:21:24,959: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:21:48,113: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:21:48] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:22:00,642: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.prediction.PredictionPipeline'>
+[2023-12-18 13:22:00,652: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:22:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:23:25,772: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:23:25,773: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:23:31,918: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:23:31] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:23:46,607: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 13:23:46,615: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:23:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:48:44,127: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:48:44,127: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:48:49,265: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:48:49] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:48:53,518: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2023-12-18 13:48:53,530: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:48:53] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:50:17,542: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:50:17,543: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:50:21,640: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:50:21] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:50:25,950: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 16, in predict
+    model = load_model('artifacts\training\model.h5')
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at artifacts	raining\model.h5
+[2023-12-18 13:50:25,961: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:50:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 13:50:51,818: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:50:51,819: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:50:56,064: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:50:56] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:51:03,567: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:51:03] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 13:52:16,629: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:52:16] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 13:53:11,830: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 13:53:11,831: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 13:53:17,042: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:53:17] "GET / HTTP/1.1" 200 -]
+[2023-12-18 13:53:22,597: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 13:53:22] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 14:37:48,505: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 14:37:48,505: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 14:37:54,541: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:37:54] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:37:59,766: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 14:37:59,773: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:37:59] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:38:10,224: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:38:10] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:38:17,320: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 14:38:17,324: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:38:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:39:48,892: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 14:39:48,892: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 14:39:54,861: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 14:39:54] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:40:03,243: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 14:40:03,248: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 14:40:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:40:53,319: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 14:40:53,319: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 14:40:53,321: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:40:56,178: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 14:40:56,180: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 14:41:03,940: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 14:41:03] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:41:13,530: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 43, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 20, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 425, in load_img
+    raise TypeError(
+TypeError: path should be path-like or io.BytesIO, not <class 'cnnClassifier.pipeline.s5_prediction.PredictionPipeline'>
+[2023-12-18 14:41:13,533: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 14:41:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:43:16,175: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 14:43:16,175: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 14:43:16,177: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:43:19,505: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 14:43:19,507: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 14:43:21,551: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:43:21] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:43:27,850: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:43:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:43:52,131: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 14:43:52,540: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:43:56,942: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 14:43:56,944: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 14:43:58,289: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:43:58] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:44:02,677: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:44:02] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:47:33,007: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 14:47:33,683: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:56:03,471: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 14:56:03,472: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 14:56:03,474: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:56:06,456: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 14:56:06,457: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 14:56:12,053: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:56:12] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:56:19,777: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:56:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:57:27,868: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 14:57:28,255: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:57:32,496: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 14:57:32,498: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 14:57:32,518: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:57:32] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:57:36,698: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:57:36] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:58:15,343: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 14:58:15,749: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:58:20,773: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 14:58:20,775: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 14:58:20,806: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:58:20] "GET / HTTP/1.1" 200 -]
+[2023-12-18 14:58:25,230: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 14:58:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 14:59:01,548: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 14:59:01,980: INFO: _internal:  * Restarting with stat]
+[2023-12-18 14:59:06,125: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 14:59:06,126: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:00:00,109: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 15:00:00,489: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:00:03,876: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:00:03,878: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:00:11,630: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:00:11] "GET / HTTP/1.1" 200 -]
+[2023-12-18 15:00:16,335: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:00:16] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 15:01:34,554: INFO: _internal:  * Detected change in 'c:\\users\\asbpi\\desktop\\asb\\data_science\\projects\\my projects\\renal-disease-classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 15:01:34,974: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:01:39,264: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:01:39,266: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:02:13,894: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 15:02:14,355: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:02:17,788: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:02:17,791: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:05:05,718: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\research\\test.py', reloading]
+[2023-12-18 15:05:06,173: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:05:10,060: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:05:10,061: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:09:59,125: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 15:09:59,126: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 15:10:02,543: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 15:10:02] "GET / HTTP/1.1" 200 -]
+[2023-12-18 15:10:08,646: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 15:10:08] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 15:11:48,732: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 15:11:48,732: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 15:11:53,113: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:11:53] "GET / HTTP/1.1" 200 -]
+[2023-12-18 15:11:57,653: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 23, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\engine\data_adapter.py", line 1082, in select_data_adapter
+    raise ValueError(
+ValueError: Failed to find data adapter that can handle input: <class 'PIL.Image.Image'>, <class 'NoneType'>
+[2023-12-18 15:11:57,664: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:11:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 15:13:22,111: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 15:13:22,112: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 15:13:26,796: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:13:26] "GET / HTTP/1.1" 200 -]
+[2023-12-18 15:13:31,963: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:13:31] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 15:14:24,593: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 15:14:24,594: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 15:14:27,192: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 15:14:27] "GET / HTTP/1.1" 200 -]
+[2023-12-18 15:14:32,479: INFO: _internal: 127.0.0.1 - - [18/Dec/2023 15:14:32] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 15:15:19,468: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 15:15:19,469: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 15:15:19,470: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:15:22,690: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:15:22,692: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:15:29,888: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:15:29] "GET / HTTP/1.1" 200 -]
+[2023-12-18 15:15:39,111: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:15:39] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 15:16:00,341: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:16:00] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 15:16:49,172: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 15:16:49,602: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:16:52,582: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:16:52,584: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:17:33,278: INFO: _internal:  * Detected change in 'c:\\users\\asbpi\\desktop\\asb\\data_science\\projects\\my projects\\renal-disease-classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 15:17:33,682: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:17:36,847: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:17:36,849: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:20:26,621: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 15:20:26,622: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 15:20:26,624: INFO: _internal:  * Restarting with stat]
+[2023-12-18 15:20:29,901: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 15:20:29,903: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 15:20:31,535: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:20:31] "GET / HTTP/1.1" 200 -]
+[2023-12-18 15:20:31,679: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:20:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2023-12-18 15:20:44,510: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:20:44] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -]
+[2023-12-18 15:21:00,069: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:21:00] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -]
+[2023-12-18 15:21:02,242: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:21:02] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -]
+[2023-12-18 15:26:33,669: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 15:26:33] "GET / HTTP/1.1" 200 -]
+[2023-12-18 16:04:38,066: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 16:04:38,067: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 16:04:38,068: INFO: _internal:  * Restarting with stat]
+[2023-12-18 16:04:41,205: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 16:04:41,207: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 16:04:46,832: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 16:04:46] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-12-18 16:04:47,214: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 16:04:47] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -]
+[2023-12-18 16:04:47,216: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 16:04:47] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -]
+[2023-12-18 16:04:47,300: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 16:04:47] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -]
+[2023-12-18 16:04:47,375: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 16:04:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -]
+[2023-12-18 16:08:21,062: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\research\\test.py', reloading]
+[2023-12-18 16:08:21,415: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:19:12,756: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 19:19:12,756: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 19:19:18,070: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:19:18] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:19:31,903: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:19:31] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:22:20,657: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:22:20] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:22:23,257: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:22:23] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:22:29,475: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:22:29] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:23:22,228: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-18 19:23:22,228: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-18 19:23:22,235: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:23:25,373: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:23:25,373: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:23:27,539: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:23:27] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:24:00,531: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:24:00] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:24:12,043: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:24:12] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:24:26,481: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:24:26] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:26:02,196: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:26:02,747: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:26:06,106: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:26:06,106: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:26:07,536: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:26:07] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:26:24,329: INFO: _internal:  * Detected change in 'c:\\users\\asbpi\\desktop\\asb\\data_science\\projects\\my projects\\renal-disease-classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:26:24,838: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:26:28,060: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:26:28,060: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:26:31,436: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:26:31] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:30:49,302: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:30:49,732: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:30:52,721: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:30:52,721: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:31:02,987: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:31:02] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 19:31:48,356: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:31:49,065: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:31:53,783: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:31:53,784: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:31:53,802: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:31:53] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:32:00,220: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:32:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 19:32:52,462: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:32:53,348: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:32:57,951: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:32:57,951: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:32:57,992: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:32:57] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:33:03,301: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:33:03] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:33:29,297: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:33:29,754: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:33:33,892: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:33:33,892: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:33:34,851: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:33:34] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:33:46,111: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:33:46,653: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:33:50,588: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:33:50,588: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:33:51,534: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:33:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 19:34:16,980: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:34:17,616: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:34:21,826: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:34:21,831: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:34:21,864: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:34:21] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:34:27,640: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:34:27] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:35:38,641: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:35:39,156: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:35:43,028: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:35:43,028: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:35:44,024: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:35:44] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 19:36:25,533: INFO: _internal:  * Detected change in 'c:\\users\\asbpi\\desktop\\asb\\data_science\\projects\\my projects\\renal-disease-classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:36:26,108: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:36:29,855: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:36:29,855: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:36:38,971: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:36:39,396: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:36:43,882: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:36:43,882: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:36:43,925: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:36:43] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:36:53,429: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:36:53] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:38:54,127: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:38:54,697: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:38:58,536: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:38:58,536: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:38:59,527: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:38:59] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:39:24,878: INFO: _internal:  * Detected change in 'c:\\users\\asbpi\\desktop\\asb\\data_science\\projects\\my projects\\renal-disease-classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:39:25,300: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:39:28,237: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:39:28,237: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:39:37,364: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:39:37,853: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:39:41,069: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:39:41,069: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:40:02,340: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:40:02,733: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:40:05,621: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:40:05,621: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:40:49,080: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:40:49,651: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:40:53,508: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:40:53,508: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:40:54,491: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:40:54] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 19:41:05,758: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:41:06,635: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:41:10,828: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:41:10,829: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:41:10,862: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:41:10] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:41:15,765: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:41:15] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 19:41:51,342: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\src\\cnnClassifier\\pipeline\\s5_prediction.py', reloading]
+[2023-12-18 19:41:51,758: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:41:54,782: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:41:54,784: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:41:58,650: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:41:58] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:42:03,964: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:42:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-18 19:42:36,341: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:42:37,133: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:42:41,269: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:42:41,273: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:42:41,293: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:42:41] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:42:46,622: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:42:46] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:43:02,244: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:43:02] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:45:20,052: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:45:20] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:49:46,615: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:49:46] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:50:26,260: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:50:26] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:51:20,827: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:51:20] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:58:31,424: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:58:31,873: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:58:35,394: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:58:35,410: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 19:59:08,218: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:59:08] "GET / HTTP/1.1" 200 -]
+[2023-12-18 19:59:15,891: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 19:59:15] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 19:59:50,018: INFO: _internal:  * Detected change in 'C:\\Users\\asbpi\\Desktop\\ASB\\Data_Science\\Projects\\MY Projects\\Renal-Disease-Classification\\app.py', reloading]
+[2023-12-18 19:59:50,428: INFO: _internal:  * Restarting with stat]
+[2023-12-18 19:59:53,930: WARNING: _internal:  * Debugger is active!]
+[2023-12-18 19:59:53,930: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2023-12-18 20:01:57,701: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:01:57] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:02:34,551: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:02:34] "GET / HTTP/1.1" 200 -]
+[2023-12-18 20:03:06,817: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:03:06] "GET / HTTP/1.1" 200 -]
+[2023-12-18 20:03:14,490: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:03:14] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:03:40,581: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:03:40] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:04:46,183: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:04:46] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:04:50,496: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001EDD1BFE280> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-18 20:04:50,504: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:04:50] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:05:11,170: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:05:11] "GET / HTTP/1.1" 200 -]
+[2023-12-18 20:05:17,346: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001EDD1DA6040> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-18 20:05:17,354: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:05:17] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:08:08,095: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:08:08] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:08:14,616: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:08:14] "POST /predict HTTP/1.1" 200 -]
+[2023-12-18 20:08:16,138: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:08:16] "GET / HTTP/1.1" 200 -]
+[2023-12-18 20:08:43,275: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:08:43] "GET / HTTP/1.1" 200 -]
+[2023-12-18 20:08:53,722: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:08:53] "GET / HTTP/1.1" 200 -]
+[2023-12-18 20:09:14,954: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:09:14] "GET / HTTP/1.1" 200 -]
+[2023-12-18 20:09:31,095: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:09:31] "GET / HTTP/1.1" 200 -]
