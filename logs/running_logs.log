@@ -2384,3 +2384,9 @@ ValueError: Failed to find data adapter that can handle input: <class 'PIL.Image
 [2023-12-18 20:46:56,997: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:46:56] "POST /predict HTTP/1.1" 200 -]
 [2023-12-18 20:50:13,676: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:50:13] "GET / HTTP/1.1" 200 -]
 [2023-12-18 20:50:49,292: INFO: _internal: 192.168.1.17 - - [18/Dec/2023 20:50:49] "GET / HTTP/1.1" 200 -]
+[2023-12-19 22:51:37,199: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-19 22:51:37,204: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-19 22:51:44,555: INFO: _internal: 192.168.1.17 - - [19/Dec/2023 22:51:44] "GET / HTTP/1.1" 200 -]
