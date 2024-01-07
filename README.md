@@ -157,5 +157,3 @@ click here [http://localhost:8080/train](http://localhost:8080/)
 email - [asbpintu@gmail.com](asbpintu@gmail.com)
 
 linkedin - [https://www.linkedin.com/in/asbpintu/](https://www.linkedin.com/in/asbpintu/)
-=======
->>>>>>> 1cbff9d37fdb925009416e174e86469c382b49ef
