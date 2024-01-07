@@ -2553,3 +2553,138 @@ PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x
 [2024-01-07 18:01:27,371: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:01:27] "POST /predict HTTP/1.1" 200 -]
 [2024-01-07 18:02:25,359: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:02:25] "GET / HTTP/1.1" 200 -]
 [2024-01-07 18:02:43,053: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:02:43] "POST /predict HTTP/1.1" 200 -]
+[2024-01-07 18:14:39,663: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-01-07 18:14:39,664: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-01-07 18:14:43,559: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:14:43] "GET / HTTP/1.1" 200 -]
+[2024-01-07 18:14:55,257: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2024-01-07 18:14:55,258: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2024-01-07 18:14:55,260: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 18:14:55,262: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 18:14:55,262: INFO: common: created directory at: artifacts]
+[2024-01-07 18:14:55,263: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-07 18:14:55,263: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-01-07 18:15:01,951: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-01-07 18:15:03,020: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2024-01-07 18:15:03,022: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2024-01-07 18:15:03,026: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 18:15:03,028: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 18:15:03,028: INFO: common: created directory at: artifacts]
+[2024-01-07 18:15:03,028: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-01-07 18:15:03,735: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-01-07 18:15:04,126: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2024-01-07 18:15:04,127: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2024-01-07 18:15:04,129: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 18:15:04,129: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 18:15:04,129: INFO: common: created directory at: artifacts]
+[2024-01-07 18:15:04,129: INFO: common: created directory at: artifacts\training]
+[2024-01-07 18:16:31,568: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-01-07 18:16:31,568: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-01-07 18:16:35,619: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:16:35] "GET / HTTP/1.1" 200 -]
+[2024-01-07 18:16:48,090: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2024-01-07 18:16:48,091: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2024-01-07 18:16:48,093: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 18:16:48,095: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 18:16:48,096: INFO: common: created directory at: artifacts]
+[2024-01-07 18:16:48,096: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-07 18:16:48,096: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-01-07 18:17:02,806: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-01-07 18:17:03,531: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2024-01-07 18:17:03,533: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2024-01-07 18:17:03,535: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 18:17:03,536: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 18:17:03,537: INFO: common: created directory at: artifacts]
+[2024-01-07 18:17:03,537: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-01-07 18:17:03,986: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-01-07 18:17:04,309: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2024-01-07 18:17:04,310: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2024-01-07 18:17:04,313: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 18:17:04,314: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 18:17:04,315: INFO: common: created directory at: artifacts]
+[2024-01-07 18:17:04,315: INFO: common: created directory at: artifacts\training]
+[2024-01-07 18:17:50,802: INFO: main: 
+
+******** Stage  :  Model Training  (Completed) ********
+
+]
+[2024-01-07 18:17:50,802: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Started) ********
+
+]
+[2024-01-07 18:17:50,804: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 18:17:50,805: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 18:17:50,805: INFO: common: created directory at: artifacts]
+[2024-01-07 18:18:04,449: INFO: common: json file saved at: scores.json]
+[2024-01-07 18:18:04,450: INFO: common: json file saved at: scores.json]
+[2024-01-07 18:18:04,450: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Completed) ********
+
+]
+[2024-01-07 18:18:04,450: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2024-01-07 18:18:05,026: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:18:05] "GET /training HTTP/1.1" 200 -]
+[2024-01-07 18:18:05,109: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:18:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]

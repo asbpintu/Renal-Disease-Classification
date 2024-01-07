@@ -21,6 +21,12 @@ class MyApp:
 def home():
     return render_template('index.html')
 
+@app.route("/training", methods=['GET'])
+@cross_origin()
+def training():
+    os.system('python main.py')
+    return render_template('training.html')
+
 
 
 @app.route("/predict", methods=['POST'])
