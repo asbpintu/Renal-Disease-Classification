@@ -2390,3 +2390,166 @@ ValueError: Failed to find data adapter that can handle input: <class 'PIL.Image
  * Running on http://192.168.1.17:8080]
 [2023-12-19 22:51:37,204: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2023-12-19 22:51:44,555: INFO: _internal: 192.168.1.17 - - [19/Dec/2023 22:51:44] "GET / HTTP/1.1" 200 -]
+[2023-12-19 23:30:40,325: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.17:8080]
+[2023-12-19 23:30:40,325: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-19 23:30:48,066: INFO: _internal: 192.168.1.17 - - [19/Dec/2023 23:30:48] "GET / HTTP/1.1" 200 -]
+[2023-12-19 23:31:26,308: INFO: _internal: 192.168.1.17 - - [19/Dec/2023 23:31:26] "POST /predict HTTP/1.1" 200 -]
+[2023-12-19 23:31:47,835: INFO: _internal: 192.168.1.17 - - [19/Dec/2023 23:31:47] "POST /predict HTTP/1.1" 200 -]
+[2023-12-19 23:36:30,767: INFO: _internal: 192.168.1.17 - - [19/Dec/2023 23:36:30] "POST /predict HTTP/1.1" 200 -]
+[2023-12-19 23:36:43,117: INFO: _internal: 192.168.1.17 - - [19/Dec/2023 23:36:43] "GET / HTTP/1.1" 200 -]
+[2023-12-23 23:30:07,589: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2023-12-23 23:30:07,605: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-12-23 23:30:13,045: INFO: _internal: 192.168.1.5 - - [23/Dec/2023 23:30:13] "GET / HTTP/1.1" 200 -]
+[2023-12-23 23:31:15,266: INFO: _internal: 192.168.1.5 - - [23/Dec/2023 23:31:15] "POST /predict HTTP/1.1" 200 -]
+[2023-12-23 23:32:31,090: INFO: _internal: 192.168.1.5 - - [23/Dec/2023 23:32:31] "POST /predict HTTP/1.1" 200 -]
+[2023-12-23 23:46:17,620: INFO: _internal: 192.168.1.19 - - [23/Dec/2023 23:46:17] "GET / HTTP/1.1" 200 -]
+[2023-12-23 23:46:46,254: INFO: _internal: 192.168.1.19 - - [23/Dec/2023 23:46:46] "POST /predict HTTP/1.1" 200 -]
+[2023-12-23 23:47:47,954: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\asbpi\Desktop\ASB\Data_Science\Projects\MY Projects\Renal-Disease-Classification\app.py", line 31, in predictRoute
+    result= myapp.classifier.predict()
+  File "c:\users\asbpi\desktop\asb\data_science\projects\my projects\renal-disease-classification\src\cnnClassifier\pipeline\s5_prediction.py", line 19, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\keras\utils\image_utils.py", line 423, in load_img
+    img = pil_image.open(io.BytesIO(f.read()))
+  File "C:\Users\asbpi\anaconda3\envs\venv\lib\site-packages\PIL\Image.py", line 3305, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x000001B6D653F090>
+[2023-12-23 23:47:47,970: INFO: _internal: 192.168.1.19 - - [23/Dec/2023 23:47:47] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-12-23 23:48:25,687: INFO: _internal: 192.168.1.19 - - [23/Dec/2023 23:48:25] "GET / HTTP/1.1" 200 -]
+[2023-12-23 23:49:15,010: INFO: _internal: 192.168.1.19 - - [23/Dec/2023 23:49:15] "POST /predict HTTP/1.1" 200 -]
+[2023-12-23 23:52:18,371: INFO: _internal: 192.168.1.12 - - [23/Dec/2023 23:52:18] "GET / HTTP/1.1" 200 -]
+[2023-12-23 23:52:53,861: INFO: _internal: 192.168.1.12 - - [23/Dec/2023 23:52:53] "GET / HTTP/1.1" 200 -]
+[2023-12-23 23:53:30,265: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001B6D67EADC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-12-23 23:53:30,265: INFO: _internal: 192.168.1.12 - - [23/Dec/2023 23:53:30] "POST /predict HTTP/1.1" 200 -]
+[2024-01-07 17:29:15,385: INFO: main: 
+
+
+=====================  Programme Started  =====================
+
+
+]
+[2024-01-07 17:29:15,385: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Started) ********
+
+]
+[2024-01-07 17:29:15,392: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 17:29:15,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 17:29:15,392: INFO: common: created directory at: artifacts]
+[2024-01-07 17:29:15,408: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-07 17:29:15,408: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-01-07 17:29:19,654: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1hJFMUU3KQVM9-1ntZ4YYTmLw9xcOhPmV/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-01-07 17:29:20,394: INFO: main: 
+
+******** Stage  =>  Data Ingestion  (Completed) ********
+
+]
+[2024-01-07 17:29:20,394: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Started) ********
+
+]
+[2024-01-07 17:29:20,394: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 17:29:20,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 17:29:20,409: INFO: common: created directory at: artifacts]
+[2024-01-07 17:29:20,409: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-01-07 17:29:20,998: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-01-07 17:29:21,245: INFO: main: 
+
+******** Stage  :  Prepare Base Model  (Completed) ********
+
+]
+[2024-01-07 17:29:21,245: INFO: main: 
+
+******** Stage  :  Model Training  (Started) ********
+
+]
+[2024-01-07 17:29:21,245: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 17:29:21,261: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 17:29:21,261: INFO: common: created directory at: artifacts]
+[2024-01-07 17:29:21,261: INFO: common: created directory at: artifacts\training]
+[2024-01-07 17:30:00,397: INFO: main: 
+
+******** Stage  :  Model Training  (Completed) ********
+
+]
+[2024-01-07 17:30:00,397: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Started) ********
+
+]
+[2024-01-07 17:30:00,397: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-07 17:30:00,397: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-07 17:30:00,397: INFO: common: created directory at: artifacts]
+[2024-01-07 17:30:12,762: INFO: common: json file saved at: scores.json]
+[2024-01-07 17:30:12,762: INFO: common: json file saved at: scores.json]
+[2024-01-07 17:30:12,762: INFO: main: 
+
+******** Stage  :  Model Evaluation  (Completed) ********
+
+]
+[2024-01-07 17:30:12,762: INFO: main: 
+
+
+=====================  Programme Completed  =====================
+
+
+]
+[2024-01-07 17:44:30,464: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-01-07 17:44:30,464: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-01-07 17:44:33,478: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:44:33] "GET / HTTP/1.1" 200 -]
+[2024-01-07 17:44:53,295: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:44:53] "GET / HTTP/1.1" 200 -]
+[2024-01-07 17:45:22,190: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:45:22] "POST /predict HTTP/1.1" 200 -]
+[2024-01-07 17:51:24,675: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:51:24] "POST /predict HTTP/1.1" 200 -]
+[2024-01-07 17:51:42,329: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:51:42] "POST /predict HTTP/1.1" 200 -]
+[2024-01-07 17:57:09,934: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-01-07 17:57:09,934: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-01-07 17:57:15,614: INFO: _internal: 192.168.1.3 - - [07/Jan/2024 17:57:15] "GET / HTTP/1.1" 200 -]
+[2024-01-07 17:57:56,104: INFO: _internal: 192.168.1.3 - - [07/Jan/2024 17:57:56] "GET / HTTP/1.1" 200 -]
+[2024-01-07 17:58:04,365: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-01-07 17:58:04,365: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-01-07 17:58:07,516: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:58:07] "GET / HTTP/1.1" 200 -]
+[2024-01-07 17:58:10,268: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:58:10] "GET / HTTP/1.1" 200 -]
+[2024-01-07 17:59:16,075: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2024-01-07 17:59:16,076: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-01-07 17:59:16,078: INFO: _internal:  * Restarting with stat]
+[2024-01-07 17:59:19,225: WARNING: _internal:  * Debugger is active!]
+[2024-01-07 17:59:19,225: INFO: _internal:  * Debugger PIN: 101-067-131]
+[2024-01-07 17:59:19,684: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:59:19] "GET / HTTP/1.1" 200 -]
+[2024-01-07 17:59:25,674: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 17:59:25] "GET / HTTP/1.1" 200 -]
+[2024-01-07 18:00:13,041: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:00:13] "GET / HTTP/1.1" 200 -]
+[2024-01-07 18:00:26,036: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:00:26] "GET / HTTP/1.1" 200 -]
+[2024-01-07 18:01:27,371: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:01:27] "POST /predict HTTP/1.1" 200 -]
+[2024-01-07 18:02:25,359: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:02:25] "GET / HTTP/1.1" 200 -]
+[2024-01-07 18:02:43,053: INFO: _internal: 127.0.0.1 - - [07/Jan/2024 18:02:43] "POST /predict HTTP/1.1" 200 -]
