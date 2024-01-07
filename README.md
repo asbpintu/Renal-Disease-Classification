@@ -1,6 +1,7 @@
 # Renal-Disease-Classification
 
 
+<<<<<<< HEAD
 ## Introduction
 In the fast-paced world of medical technology, the ability to accurately diagnose renal diseases is a game-changer. Leveraging cutting-edge artificial intelligence, a groundbreaking project has successfully classified CT scan images to identify whether kidneys are normal, harbor stones, tumors, or cysts. This transformative initiative aims to enhance the efficiency and precision of renal disease diagnosis.
 
@@ -156,3 +157,5 @@ click here [http://localhost:8080/train](http://localhost:8080/)
 email - [asbpintu@gmail.com](asbpintu@gmail.com)
 
 linkedin - [https://www.linkedin.com/in/asbpintu/](https://www.linkedin.com/in/asbpintu/)
+=======
+>>>>>>> 1cbff9d37fdb925009416e174e86469c382b49ef
