@@ -148,7 +148,7 @@ click here [http://localhost:8080/train](http://localhost:8080/)
         - Click the running circle button near the new commit message
 
 
-# <p style="text-align: center; color: gold">THANK YOU !!!</p>
+# <p align: 'center'>THANK YOU !!!</p>
 
 ### **BestRegards**
 
